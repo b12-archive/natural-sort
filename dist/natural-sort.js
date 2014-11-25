@@ -46,6 +46,11 @@ var naturalSort = function naturalSort (options) { 'use strict';
         var xN = x.replace(re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
         var yN = y.replace(re, '\0$1\0').replace(/\0$/,'').replace(/^\0/,'').split('\0');
 
+        // Return immediately if at least one of the values is empty.
+        if (!x && !y) return EQUAL;
+        if (!x &&  y) return GREATER;
+        if ( x && !y) return SMALLER;
+
         // numeric, hex or date detection
         var xD = parseInt(x.match(hre)) || (xN.length != 1 && x.match(dre) && Date.parse(x));
         var yD = parseInt(y.match(hre)) || xD && y.match(dre) && Date.parse(y) || null;
