@@ -19,5 +19,14 @@ Credits
 The original version of this algorithm was published by Jim Palmer in [this blog post][].
 
 
+
+License
+-------
+
+This software is released under the terms of the [MIT License][].
+
+
+
 <!-- Links -->
 [this blog post]: http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/ "Javascript Natural Sort Algorithm With Unicode Support"
+[MIT License]: ./License.md
