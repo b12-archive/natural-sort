@@ -1,7 +1,18 @@
+[![David – status of dependencies
+](https://img.shields.io/david/studio-b12/mve.svg?style=flat-square)
+](https://david-dm.org/studio-b12/mve)
+ [![Code style: airbnb
+](https://img.shields.io/badge/code%20style-airbnb-777777.svg?style=flat-square)
+](https://github.com/airbnb/javascript)
+
+
+
+
 natural-sort.js
 ===============
 
 **Sorting with support for numbers, dates, unicode and more.**
+
 
 
 
@@ -11,6 +22,7 @@ Default features
 - Numbers are handled properly ("2" is before "10")
 - Dates are detected and sorted as well
 - Empty strings are after “z”
+
 
 
 
@@ -32,6 +44,7 @@ Usage
 
 
 
+
 Installation
 ------------
 
@@ -49,20 +62,22 @@ bower install natural-sort
 
 
 
+
 Credits
 -------
 
 The original version of this algorithm was published by Jim Palmer in [this blog post][].
+
+[this blog post]:  http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/  "Javascript Natural Sort Algorithm With Unicode Support"
+
+
 
 
 
 License
 -------
 
-This software is released under the terms of the [MIT License][].
+[MIT][] © [Studio B12 GmbH][]
 
-
-
-<!-- Links -->
-[this blog post]: http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/ "Javascript Natural Sort Algorithm With Unicode Support"
-[MIT License]: ./License.md
+[MIT]:              ./License.md
+[Studio B12 GmbH]:  http://studio-b12.de
