@@ -1,6 +1,6 @@
 [![David – status of dependencies
-](https://img.shields.io/david/studio-b12/mve.svg?style=flat-square)
-](https://david-dm.org/studio-b12/mve)
+](https://img.shields.io/david/studio-b12/natural-sort.svg?style=flat-square)
+](https://david-dm.org/studio-b12/natural-sort)
  [![Code style: airbnb
 ](https://img.shields.io/badge/code%20style-airbnb-777777.svg?style=flat-square)
 ](https://github.com/airbnb/javascript)
