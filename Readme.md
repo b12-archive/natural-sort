@@ -16,15 +16,19 @@ natural-sort.js
 
 
 
+<div                                                               >&nbsp;</div>
+
 Default features
 ----------------
 
-- Numbers are handled properly ("2" is before "10")
+- Numbers are handled properly (“2” is before “10”)
 - Dates are detected and sorted as well
 - Empty strings are after “z”
 
 
 
+
+<div                                                               >&nbsp;</div>
 
 Usage
 -----
@@ -45,6 +49,8 @@ Usage
 
 
 
+<div                                                               >&nbsp;</div>
+
 Installation
 ------------
 
@@ -63,6 +69,8 @@ bower install natural-sort
 
 
 
+<div                                                               >&nbsp;</div>
+
 Credits
 -------
 
@@ -73,6 +81,8 @@ The original version of this algorithm was published by Jim Palmer in [this blog
 
 
 
+
+<div                                                               >&nbsp;</div>
 
 License
 -------
