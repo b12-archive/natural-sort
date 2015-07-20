@@ -78,6 +78,7 @@ var naturalSort = function naturalSort (options) { 'use strict';
         oFxNcL += '';
         oFyNcL += '';
       }
+
       if (oFxNcL < oFyNcL) return SMALLER;
       if (oFxNcL > oFyNcL) return GREATER;
     }
