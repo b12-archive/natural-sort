@@ -15,7 +15,7 @@
   , "url": "https://github.com/studio-b12/natural-sort.git"
   }
 
-, "main": "/dist/natural-sort.js"
+, "main": "./dist/natural-sort.js"
 , "ignore":
   [ "/package.json"
   ]
