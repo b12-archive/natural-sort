@@ -88,3 +88,4 @@ var naturalSort = function naturalSort (options) { 'use strict';
 };
 
 /* exported naturalSort */
+module.exports = naturalSort;
