@@ -87,5 +87,18 @@ var naturalSort = function naturalSort (options) { 'use strict';
   };
 };
 
-/* exported naturalSort */
-module.exports = naturalSort;
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(function () {
+      return factory();
+    });
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root.naturalSort = factory();
+  }
+}(this, function () {
+
+  return naturalSort;
+
+}));
