@@ -33,6 +33,10 @@ Default features
 Usage
 -----
 
+```sh
+npm install natural-sort
+```
+
 ```js
 ['10. tenth', 'odd', 1, '', '2. second'].sort(naturalSort())
 // [1, '2. second', '10. tenth', 'odd', '']

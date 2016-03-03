@@ -9,7 +9,7 @@
   ]
 , "copyright": "Studio B12 GmbH 2014"
 , "license": "MIT"
-
+, "main": "dist/natural-sort.js"
 , "repository":
   { "type": "git"
   , "url": "https://github.com/studio-b12/natural-sort.git"
