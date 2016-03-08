@@ -54,7 +54,11 @@ Usage
 Installation
 ------------
 
-1. Download the script. You can use bower:
+1. Download the script. You can use npm or bower:
+
+```
+npm install natural-sort
+```
 
 ```
 bower install natural-sort
