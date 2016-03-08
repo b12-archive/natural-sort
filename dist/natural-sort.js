@@ -88,11 +88,7 @@ var naturalSort = function naturalSort (options) { 'use strict';
 };
 
 (function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(function () {
-      return factory();
-    });
-  } else if (typeof exports === 'object') {
+  if (typeof exports === 'object') {
     module.exports = factory();
   } else {
     root.naturalSort = factory();
