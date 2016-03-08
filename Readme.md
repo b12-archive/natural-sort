@@ -33,10 +33,6 @@ Default features
 Usage
 -----
 
-```sh
-npm install natural-sort
-```
-
 ```js
 ['10. tenth', 'odd', 1, '', '2. second'].sort(naturalSort())
 // [1, '2. second', '10. tenth', 'odd', '']
@@ -58,7 +54,11 @@ npm install natural-sort
 Installation
 ------------
 
-1. Download the script. You can use bower:
+1. Download the script. You can use npm or bower:
+
+```
+npm install natural-sort
+```
 
 ```
 bower install natural-sort
