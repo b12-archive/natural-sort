@@ -59,10 +59,6 @@ You know this from your file manager:
 
 ⏴ ['1.16.0', '1.2.0', '1.16.0-beta'].sort(naturalSort())
 ⏵ [ '1.16.0-beta', '1.16.0', '1.2.0' ]
-
-
-⏴ [3, 4, 1, 5, 2].sort(naturalSort({ direction: 'desc' }))
-⏵ [5, 4, 3, 2, 1]
 ```
 
 
