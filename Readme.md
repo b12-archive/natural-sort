@@ -8,8 +8,7 @@
 
 
 
-natural-sort.js
-===============
+# natural-sort
 
 **Sorting with support for numbers, dates, unicode and more.**
 
@@ -26,77 +25,58 @@ natural-sort.js
 
 You know this from your file manager:
 
-- Numbers are handled properly (“2” is before “10”)
-- Dates are detected and sorted as well
+- Numbers are handled properly – “2” is before “10”
+- Strings are after numbers
 - Empty strings are after “z”
+- “a” is before “B” (opt out via `caseSensitive: true`)
+- Semver-compatible sorting of version numbers
 
 
 
 
-<div                                                               >&nbsp;</div>
+<a id="/usage"></a>&nbsp;
 
-Usage
------
+## Usage
 
 ```js
-['10. tenth', 'odd', 1, '', '2. second'].sort(naturalSort())
-// [1, '2. second', '10. tenth', 'odd', '']
+⏴ ['10. tenth', 'odd', 1, '', '2. second'].sort(naturalSort())
+⏵ [1, '2. second', '10. tenth', 'odd', '']
 
-[3, 4, 1, 5, 2].sort(naturalSort({direction: 'desc'}))
-// [5, 4, 3, 2, 1]
+⏴ ['a', 'B'].sort(naturalSort())
+⏵ ['a', 'B']
+⏴ ['a', 'B'].sort(naturalSort({ caseSensitive: true }))
+⏵ ['B', 'a']
 
-['a', 'B'].sort(naturalSort())
-// ['a', 'B']
-['a', 'B'].sort(naturalSort({caseSensitive: true}))
-// ['B', 'a']
+⏴ ['a10', 'a', 'a2'].sort(naturalSort())
+⏵ ['a', 'a2', 'a10']
+
+⏴ ['0.16.0', 'a', 'a2'].sort(naturalSort())
+⏵ ['a', 'a2', 'a10']
+
+⏴ ['1.16.0', '1.2.0', '1.16.0-beta'].sort(naturalSort())
+⏵ [ '1.16.0-beta', '1.16.0', '1.2.0' ]
+
+⏴ [3, 4, 1, 5, 2].sort(naturalSort({ direction: 'desc' }))
+⏵ [5, 4, 3, 2, 1]
 ```
 
 
 
 
-<div                                                               >&nbsp;</div>
+<a id="/credits"></a>&nbsp;
 
-Installation
-------------
+## Credits
 
-1. Download the script. You can use npm or bower:
+Based on *[The Aplhanum Algorithm](http://www.davekoelle.com/alphanum.html)* by Dave Koelle.
 
-```
-npm install natural-sort
-```
-
-```
-bower install natural-sort
-```
-
-2. Include the script before yours:
-
-```html
-<script src="/bower_components/natural-sort/dist/natural-sort.js"></script>
-```
-
-
-
-
-<div                                                               >&nbsp;</div>
-
-Credits
--------
-
-The original version of this algorithm was published by Jim Palmer in [this blog post][].
-
-[this blog post]:  http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/  "Javascript Natural Sort Algorithm With Unicode Support"
+Original version published in *[Javascript Natural Sort Algorithm With Unicode Support](http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/)* by Jim Palmer.
 
 
 
 
 
-<div                                                               >&nbsp;</div>
+<a id="/license"></a>&nbsp;
 
-License
--------
+## License
 
-[MIT][] © [Studio B12 GmbH][]
-
-[MIT]:              ./License.md
-[Studio B12 GmbH]:  http://studio-b12.de
+[MIT](./License.md) © [Studio B12](http://studio-b12.de)
