@@ -13,13 +13,18 @@ natural-sort.js
 
 **Sorting with support for numbers, dates, unicode and more.**
 
+You know this from your file manager:
 
+<a id="/screenshot"></a>&nbsp;
 
+<p align="center"><img
+  alt="How Nautilus handles sorting"
+  src="https://cdn.rawgit.com/studio-b12/natural-sort/7c54aac/nautilus-screenshot.png"
+  title="That’s how Nautilus handles sorting"
+  width="588"
+/></p>
 
-<div                                                               >&nbsp;</div>
-
-Default features
-----------------
+<a id="/features"></a>&nbsp;
 
 - Numbers are handled properly (“2” is before “10”)
 - Dates are detected and sorted as well
