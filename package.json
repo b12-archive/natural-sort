@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "develop": "ava --watch",
+    "test": "nyc ava"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
   "name": "natural-sort",
   "version": "1.0.0",
   "description": "Sorting with support for numbers, dates, unicode and more.",
@@ -11,5 +18,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/studio-b12/natural-sort.git"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "coveralls": "^2.11.9",
+    "nyc": "^6.4.0"
   }
 }
