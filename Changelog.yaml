@@ -1,6 +1,7 @@
 master:
   breaking changes:
     - Dropped support for `direction`
+    - Dropped bower and UMD support
 
 1.0.0:
   date: 2016-03-08
