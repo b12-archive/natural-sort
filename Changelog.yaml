@@ -1,0 +1,9 @@
+1.0.0:
+  date: 2016-03-08
+  note: First stable release
+  new features:
+    - CommonJS support
+
+0.1.0:
+  date: 2014-11-25
+  note: Initial release
