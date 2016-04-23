@@ -13,8 +13,6 @@ natural-sort.js
 
 **Sorting with support for numbers, dates, unicode and more.**
 
-You know this from your file manager:
-
 <a id="/screenshot"></a>&nbsp;
 
 <p align="center"><img
@@ -25,6 +23,8 @@ You know this from your file manager:
 /></p>
 
 <a id="/features"></a>&nbsp;
+
+You know this from your file manager:
 
 - Numbers are handled properly (“2” is before “10”)
 - Dates are detected and sorted as well
