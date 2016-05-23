@@ -42,20 +42,13 @@ You know this from your file manager:
 ⏴ ['10. tenth', 'odd', 1, '', '2. second'].sort(naturalSort())
 ⏵ [1, '2. second', '10. tenth', 'odd', '']
 
-
 ⏴ ['a', 'B'].sort(naturalSort())
 ⏵ ['a', 'B']
 ⏴ ['a', 'B'].sort(naturalSort({ caseSensitive: true }))
 ⏵ ['B', 'a']
 
-
 ⏴ ['a10', 'a', 'a2'].sort(naturalSort())
 ⏵ ['a', 'a2', 'a10']
-
-
-⏴ ['0.16.0', 'a', 'a2'].sort(naturalSort())
-⏵ ['a', 'a2', 'a10']
-
 
 ⏴ ['1.16.0', '1.2.0', '1.16.0-beta'].sort(naturalSort())
 ⏵ [ '1.16.0-beta', '1.16.0', '1.2.0' ]
