@@ -86,7 +86,7 @@ var naturalSort = function naturalSort (options) { 'use strict';
         oFyNcL += '';
       }
 
-      if (locale) {
+      if (locale && oFxNcL.localeCompare) {
         var compared = oFxNcL.localeCompare(oFyNcL, locale);
         if (compared < 0) return SMALLER;
         if (compared > 0) return GREATER;
