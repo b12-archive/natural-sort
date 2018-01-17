@@ -24,6 +24,7 @@ var naturalSort = function naturalSort (options) { 'use strict';
       1
     );
     var SMALLER = -GREATER;
+    var locale = options.locale || false;
 
     var re = /(^-?[0-9]+(\.?[0-9]*)[df]?e?[0-9]?$|^0x[0-9a-f]+$|[0-9]+)/gi;
     var sre = /(^[ ]*|[ ]*$)/g;
@@ -79,8 +80,14 @@ var naturalSort = function naturalSort (options) { 'use strict';
         oFyNcL += '';
       }
 
-      if (oFxNcL < oFyNcL) return SMALLER;
-      if (oFxNcL > oFyNcL) return GREATER;
+      if (locale) {
+        var compared = oFxNcL.localeCompare(oFyNcL, locale);
+        if (compared < 0) return SMALLER;
+        if (compared > 0) return GREATER;
+      } else {
+        if (oFxNcL < oFyNcL) return SMALLER;
+        if (oFxNcL > oFyNcL) return GREATER;
+      }
     }
 
     return EQUAL;
